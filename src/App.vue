@@ -3,13 +3,16 @@
 </script>
 
 <template>
-  <router-view v-slot="{ Component, route }">
-    <!-- Use any custom transition and fallback to `fade` -->
-    <Transition :name="route.meta.transition || 'fade'" mode="out-in">
-      <component :is="Component" />
-    </Transition>
-  </router-view>
+  <router-view></router-view>
 </template>
 
 <style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
 </style>
